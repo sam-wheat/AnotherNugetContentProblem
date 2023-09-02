@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <IncludeSymbols>true</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <Authors>Me</Authors>
+	  <Company>This one</Company>
+	  <Product>Package1</Product>
+	  <Description>Package1</Description>
+	  <Copyright>No</Copyright>
+	  <PackageProjectUrl>https://github.com/sam-wheat/AnotherNugetContentProblem</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/sam-wheat/AnotherNugetContentProblem</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageTags>why donsnt this work</PackageTags>
+	  <PackageReleaseNotes>See Repository</PackageReleaseNotes>
+	  <PackageId>Package1</PackageId>
+	  <PackageOutputPath>C:\\NugetPackages</PackageOutputPath>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="SQL\MSSQL\SomeSQL.sql">
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackagePath>contentFiles\any\any\Database\SQL\MSSQL\</PackagePath>
+		</Content>
+	</ItemGroup>
+</Project>
